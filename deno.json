@@ -1,9 +1,9 @@
 {
     "name": "@gnome/bash",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "exports": {
         ".": "./mod.ts",
-        "./bash": "./bash.ts"
+        "./cli": "./cli.ts"
     },
     "compilerOptions": {
         "lib": ["deno.worker"]
@@ -25,14 +25,14 @@
     "publish": {
         "include": [
             "mod.ts",
-            "bash.ts",
+            "cli.ts",
             "README.md",
             "LICENSE.md",
             "deno.json"
         ]
     },
     "imports": {
-        "@gnome/exec": "jsr:@gnome/exec@^0.4.1",
+        "@gnome/exec": "jsr:@gnome/exec@^0.4.4",
         "@gnome/fs": "jsr:@gnome/fs@^0.0.0",
         "@gnome/os-constants": "jsr:@gnome/os-constants@^0.0.0",
         "@std/path": "jsr:@std/path@^0.225.1"

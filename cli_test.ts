@@ -1,6 +1,6 @@
 import { assertEquals as equals } from "jsr:@std/assert@^0.224.0";
 import { remove, writeTextFile } from "jsr:@gnome/fs@^0.0.0/deno";
-import { bash } from "./bash.ts";
+import { bash } from "./cli.ts";
 
 Deno.test("simple inline test", async () => {
     const cmd = await bash("echo 'Hello, World!'");
